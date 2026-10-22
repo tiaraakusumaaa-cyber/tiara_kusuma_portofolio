@@ -1,0 +1,1188 @@
+/* ==========================================
+   1. PENGATURAN DASAR
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #52617d;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+.content-section {
+    padding: 85px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #35466f;
+}
+
+
+/* ==========================================
+   2. NAVBAR
+========================================== */
+
+.navbar-pink {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 3px 20px rgba(70, 90, 150, 0.12);
+    padding: 14px 0;
+}
+
+.navbar-pink .navbar-brand {
+    color: #5268a5;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navbar-pink .navbar-brand:hover {
+    color: #e477ad;
+}
+
+.navbar-pink .nav-link {
+    color: #536586;
+    font-weight: 600;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.navbar-pink .nav-link:hover {
+    color: #e477ad;
+}
+
+
+/* ==========================================
+   3. HOME SECTION
+   GRADASI BIRU - UNGU - PINK
+========================================== */
+
+.home-section {
+    min-height: 600px;
+    padding: 130px 20px 150px;
+
+    background: linear-gradient(
+        135deg,
+        #cfe7ff 0%,
+        #e3dcff 48%,
+        #ffd6e8 100%
+    );
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto-profil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+
+    box-shadow: 0 8px 25px rgba(76, 91, 150, 0.20);
+
+    transition: transform 0.3s ease;
+}
+
+.foto-profil:hover {
+    transform: scale(1.05);
+}
+
+.home-section h1 {
+    color: #35466f;
+    font-size: 46px;
+    font-weight: 750;
+    margin-top: 20px;
+}
+
+.home-section .subtitle {
+    color: #6b648f;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+
+/* Gelombang pemisah HOME */
+
+.wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+}
+
+
+/* ==========================================
+   4. ABOUT SECTION
+========================================== */
+
+.about-section {
+    background: linear-gradient(
+        135deg,
+        #f0f7ff 0%,
+        #ffffff 50%,
+        #fff0f6 100%
+    );
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-label {
+    display: inline-block;
+    color: #d16e9f;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.about-header h2 {
+    color: #35466f;
+    font-size: 36px;
+    font-weight: 750;
+    text-align: center;
+}
+
+.about-line {
+    width: 75px;
+    height: 4px;
+    margin: 15px auto 0;
+
+    background: linear-gradient(
+        90deg,
+        #79b9f8,
+        #e99ac4
+    );
+
+    border-radius: 10px;
+}
+
+
+/* Kartu perkenalan */
+
+.about-card {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e4e8fa;
+
+    box-shadow: 0 8px 30px rgba(85, 105, 160, 0.09);
+
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+}
+
+.about-hello {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d16e9f;
+}
+
+.about-card p {
+    color: #596780;
+    line-height: 1.9;
+}
+
+.about-card strong {
+    color: #4d639b;
+}
+
+
+/* Kartu informasi */
+
+.about-info {
+    height: 100%;
+
+    background: linear-gradient(
+        145deg,
+        #dcecff,
+        #fce5f1
+    );
+
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(85, 105, 160, 0.10);
+
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-icon {
+    font-size: 28px;
+    min-width: 35px;
+}
+
+.info-item small {
+    color: #6c7692;
+    font-size: 14px;
+}
+
+.info-item h6 {
+    color: #35466f;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+
+/* ==========================================
+   5. PROJECTS SECTION
+========================================== */
+
+.projects-section {
+    background: linear-gradient(
+        135deg,
+        #dbeafe 0%,
+        #ece7ff 48%,
+        #fce4f0 100%
+    );
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.projects-label {
+    color: #d16e9f;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.projects-header h2 {
+    color: #35466f;
+    font-size: 36px;
+    font-weight: 750;
+    text-align: center;
+}
+
+.projects-sub {
+    color: #65718c;
+    margin-top: 18px;
+}
+
+.projects-line {
+    width: 75px;
+    height: 4px;
+    margin: 15px auto 0;
+
+    background: linear-gradient(
+        90deg,
+        #79b9f8,
+        #e99ac4
+    );
+
+    border-radius: 10px;
+}
+
+
+/* Kartu proyek */
+
+.project-card {
+    height: 100%;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(75, 100, 160, 0.10);
+
+    text-align: left;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(75, 100, 160, 0.17);
+}
+
+.project-icon {
+    display: inline-block;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.project-card h5 {
+    color: #405582;
+    font-size: 20px;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #68748b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* Label teknologi */
+
+.project-tags {
+    margin-top: 18px;
+}
+
+.project-tags span {
+    display: inline-block;
+
+    background: linear-gradient(
+        135deg,
+        #dcecff,
+        #fce4f0
+    );
+
+    color: #566a9b;
+    font-weight: 600;
+    font-size: 12px;
+
+    padding: 6px 13px;
+    margin: 4px 3px 0 0;
+
+    border-radius: 30px;
+}
+
+
+/* ==========================================
+   6. CONTACT SECTION
+========================================== */
+
+.contact-section {
+    background: linear-gradient(
+        135deg,
+        #fce4f0 0%,
+        #e9e5ff 50%,
+        #d9ecff 100%
+    );
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-label {
+    color: #d16e9f;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.contact-header h2 {
+    color: #35466f;
+    font-size: 36px;
+    font-weight: 750;
+    text-align: center;
+}
+
+.contact-sub {
+    color: #65718c;
+    margin-top: 18px;
+}
+
+.contact-line {
+    width: 75px;
+    height: 4px;
+    margin: 15px auto 0;
+
+    background: linear-gradient(
+        90deg,
+        #79b9f8,
+        #e99ac4
+    );
+
+    border-radius: 10px;
+}
+
+
+/* Kartu kontak */
+
+.contact-card {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+
+    text-decoration: none;
+    color: inherit;
+
+    box-shadow: 0 8px 25px rgba(75, 100, 160, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(75, 100, 160, 0.16);
+}
+
+.contact-icon {
+    font-size: 30px;
+    min-width: 38px;
+}
+
+.contact-card small {
+    color: #d16e9f;
+    font-size: 14px;
+}
+
+.contact-card h6 {
+    color: #405582;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   7. IKON INSTAGRAM
+========================================== */
+
+.instagram-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #405de6,
+        #833ab4,
+        #e1306c,
+        #f77737
+    );
+
+    color: #ffffff;
+    font-size: 27px;
+
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .instagram-icon {
+    transform: scale(1.1);
+}
+
+
+/* ==========================================
+   8. FOOTER
+========================================== */
+
+.footer {
+    background: linear-gradient(
+        110deg,
+        #526da7,
+        #796ba5,
+        #c17da7
+    );
+
+    color: #ffffff;
+    text-align: center;
+
+    padding: 22px 15px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+
+/* ==========================================
+   9. RESPONSIVE UNTUK HP
+========================================== */
+
+@media (max-width: 768px) {
+
+    .home-section {
+        min-height: 520px;
+        padding: 120px 15px 120px;
+    }
+
+    .foto-profil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-section h1 {
+        font-size: 35px;
+    }
+
+    .home-section .subtitle {
+        font-size: 16px;
+    }
+
+    .content-section {
+        padding: 60px 0;
+    }
+
+    .about-header h2,
+    .projects-header h2,
+    .contact-header h2 {
+        font-size: 30px;
+    }
+
+    .about-card,
+    .about-info,
+    .project-card {
+        padding: 25px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .navbar-pink .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+/* ==========================================
+   1. PENGATURAN DASAR
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #52617d;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+.content-section {
+    padding: 85px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #35466f;
+}
+
+
+/* ==========================================
+   2. NAVBAR
+========================================== */
+
+.navbar-pink {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 3px 20px rgba(70, 90, 150, 0.12);
+    padding: 14px 0;
+}
+
+.navbar-pink .navbar-brand {
+    color: #5268a5;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navbar-pink .navbar-brand:hover {
+    color: #e477ad;
+}
+
+.navbar-pink .nav-link {
+    color: #536586;
+    font-weight: 600;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.navbar-pink .nav-link:hover {
+    color: #e477ad;
+}
+
+
+/* ==========================================
+   3. HOME SECTION
+   GRADASI BIRU - UNGU - PINK
+========================================== */
+
+.home-section {
+    min-height: 600px;
+    padding: 130px 20px 150px;
+    background: linear-gradient(
+        135deg,
+        #cfe7ff 0%,
+        #e3dcff 48%,
+        #ffd6e8 100%
+    );
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto-profil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(76, 91, 150, 0.20);
+    transition: transform 0.3s ease;
+}
+
+.foto-profil:hover {
+    transform: scale(1.05);
+}
+
+.home-section h1 {
+    color: #35466f;
+    font-size: 46px;
+    font-weight: 750;
+    margin-top: 20px;
+}
+
+.home-section .subtitle {
+    color: #6b648f;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+
+/* Gelombang pemisah HOME */
+
+.wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+}
+
+
+/* ==========================================
+   4. ABOUT SECTION
+========================================== */
+
+.about-section {
+    background: linear-gradient(
+        135deg,
+        #f0f7ff 0%,
+        #ffffff 50%,
+        #fff0f6 100%
+    );
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-label {
+    display: inline-block;
+    color: #d16e9f;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.about-header h2 {
+    color: #35466f;
+    font-size: 36px;
+    font-weight: 750;
+    text-align: center;
+}
+
+.about-line {
+    width: 75px;
+    height: 4px;
+    margin: 15px auto 0;
+    background: linear-gradient(90deg, #79b9f8, #e99ac4);
+    border-radius: 10px;
+}
+
+
+/* Kartu perkenalan */
+
+.about-card {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e4e8fa;
+    box-shadow: 0 8px 30px rgba(85, 105, 160, 0.09);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+}
+
+.about-hello {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d16e9f;
+}
+
+.about-card p {
+    color: #596780;
+    line-height: 1.9;
+}
+
+.about-card strong {
+    color: #4d639b;
+}
+
+
+/* Kartu informasi */
+
+.about-info {
+    height: 100%;
+    background: linear-gradient(145deg, #dcecff, #fce5f1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(85, 105, 160, 0.10);
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-icon {
+    font-size: 28px;
+    min-width: 35px;
+}
+
+.info-item small {
+    color: #6c7692;
+    font-size: 14px;
+}
+
+.info-item h6 {
+    color: #35466f;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+
+/* ==========================================
+   5. PROJECTS SECTION
+========================================== */
+
+.projects-section {
+    background: linear-gradient(
+        135deg,
+        #dbeafe 0%,
+        #ece7ff 48%,
+        #fce4f0 100%
+    );
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.projects-label {
+    color: #d16e9f;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.projects-header h2 {
+    color: #35466f;
+    font-size: 36px;
+    font-weight: 750;
+    text-align: center;
+}
+
+.projects-sub {
+    color: #65718c;
+    margin-top: 18px;
+}
+
+.projects-line {
+    width: 75px;
+    height: 4px;
+    margin: 15px auto 0;
+    background: linear-gradient(90deg, #79b9f8, #e99ac4);
+    border-radius: 10px;
+}
+
+
+/* Kartu proyek */
+
+.project-card {
+    height: 100%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(75, 100, 160, 0.10);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(75, 100, 160, 0.17);
+}
+
+
+/* ==========================================
+   6. IKON MY PROJECTS
+========================================== */
+
+/* Pengaturan umum ikon proyek */
+
+.project-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #719de8;
+    transition: transform 0.3s ease;
+}
+
+/* Efek ketika kartu disentuh atau diarahkan */
+
+.project-card:hover .project-icon {
+    transform: scale(1.1);
+}
+
+/* Ikon Website Portfolio */
+
+.project-card .bi-globe2 {
+    color: #38a9e8;
+}
+
+/* Ikon Desain UI/UX */
+
+.project-card .bi-palette-fill {
+    color: #df86b6;
+}
+
+/* Ikon Aplikasi Perpustakaan */
+
+.project-card .bi-pc-display {
+    color: #7188d9;
+}
+
+
+/* Judul dan deskripsi proyek */
+
+.project-card h5 {
+    color: #405582;
+    font-size: 20px;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #68748b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* Label teknologi */
+
+.project-tags {
+    margin-top: 18px;
+}
+
+.project-tags span {
+    display: inline-block;
+    background: linear-gradient(135deg, #dcecff, #fce4f0);
+    color: #566a9b;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 13px;
+    margin: 4px 3px 0 0;
+    border-radius: 30px;
+}
+
+
+/* ==========================================
+   7. CONTACT SECTION
+========================================== */
+
+.contact-section {
+    background: linear-gradient(
+        135deg,
+        #fce4f0 0%,
+        #e9e5ff 50%,
+        #d9ecff 100%
+    );
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-label {
+    color: #d16e9f;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.contact-header h2 {
+    color: #35466f;
+    font-size: 36px;
+    font-weight: 750;
+    text-align: center;
+}
+
+.contact-sub {
+    color: #65718c;
+    margin-top: 18px;
+}
+
+.contact-line {
+    width: 75px;
+    height: 4px;
+    margin: 15px auto 0;
+    background: linear-gradient(90deg, #79b9f8, #e99ac4);
+    border-radius: 10px;
+}
+
+
+/* Kartu kontak */
+
+.contact-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 25px rgba(75, 100, 160, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(75, 100, 160, 0.16);
+}
+
+
+/* ==========================================
+   8. IKON CONTACT ME
+========================================== */
+
+/* Pengaturan umum ikon kontak */
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    font-size: 27px;
+    color: #7896d7;
+    transition: transform 0.3s ease;
+}
+
+/* Ikon Email */
+
+.contact-card .bi-envelope-fill {
+    color: #8b9fe0;
+}
+
+/* Ikon WhatsApp */
+
+.contact-card .bi-whatsapp {
+    color: #25D366;
+}
+
+/* Ikon Instagram dengan gradasi warna */
+
+.instagram-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #405de6,
+        #833ab4,
+        #e1306c,
+        #f77737
+    );
+
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.instagram-icon i {
+    color: #ffffff;
+}
+
+/* Efek hover ikon kontak */
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.08);
+}
+
+
+/* Teks kontak */
+
+.contact-card small {
+    color: #d16e9f;
+    font-size: 14px;
+}
+
+.contact-card h6 {
+    color: #405582;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   9. FOOTER
+========================================== */
+
+.footer {
+    background: linear-gradient(110deg, #526da7, #796ba5, #c17da7);
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+
+/* ==========================================
+   10. RESPONSIVE UNTUK HP
+========================================== */
+
+@media (max-width: 768px) {
+
+    .home-section {
+        min-height: 520px;
+        padding: 120px 15px 120px;
+    }
+
+    .foto-profil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-section h1 {
+        font-size: 35px;
+    }
+
+    .home-section .subtitle {
+        font-size: 16px;
+    }
+
+    .content-section {
+        padding: 60px 0;
+    }
+
+    .about-header h2,
+    .projects-header h2,
+    .contact-header h2 {
+        font-size: 30px;
+    }
+
+    .about-card,
+    .about-info,
+    .project-card {
+        padding: 25px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .navbar-pink .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
